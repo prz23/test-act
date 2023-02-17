@@ -1,11 +1,8 @@
 name: Docker Image CI
 
 on:
-  workflow_run:
-    workflows: [Run Tests]
-    types:
-      - completed
-
+  workflow_dispatch:
+  
 jobs:
 
   build:
