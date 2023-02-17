@@ -12,6 +12,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: move file
-        run: cp ./occlum/Dockerfile.deploy ./
+        run: cp ./test-project/Dockerfile.move ./
       - name: build
-        run: docker build -f Dockerfile.deploy . -t occlum-watcher-deploy:latest
+        run: docker build . -f Dockerfile.move --tag test-act:latest
